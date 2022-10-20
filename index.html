@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 class="company-name">Jimmy's Diner</h1>
+                <p class="best-burger">The best burgers and pizzas in town.</p>
+            </div>
+        </header>
+        <section id="menu" class="menu">
+        </section>
+        <section class="payment-section">
+
+
+            <div class="pay hide">
+                <h2>Your Payment</h2>
+            </div>
+
+            <div class='payment' id="payment"></div>
+            <div class="amount ">
+
+                <p id='total' class=" hide">Total price</p>
+                <p id="amount"></p>
+
+            </div>
+
+            <button class="hide complete-btn" id="complete-btn"> Complete order
+            </button>
+        </section>
+        <section id="payment-section" class="payment-section">
+            <div class="payment-methood hide">
+                <i id="close-btn" class="fa-solid close-btn fa-2x fa-xmark"></i>
+                <form id="input-form">
+                    <h2>Enter form details</h2>
+                    <input required type="text" name="user-name" id="name"
+                        placeholder="Enter your name">
+                    <input required type="text" name="card-number"
+                        id="card-number" placeholder="Enter card number">
+                    <input required type="text" name="cvv" id="cvv"
+                        placeholder="Enter CVV">
+                    <button id="pay-btn">Pay</button>
+                </form>
+            </div>
+        </section>
+        <div class='confirm hide' id="confirmatory-message">
+
+        </div>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
